@@ -5,6 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using Lab_2;
+using Lab_3;
 
 namespace Presentation
 {
@@ -12,6 +13,7 @@ namespace Presentation
     {
         static void Main(string[] args)
         {
+            #region Lab2
             var ht = new CustomHashtable(5);
             ht.Add("some", "value");
             ht.Add("sososo", "val");
@@ -21,6 +23,11 @@ namespace Presentation
             ht.Add("gorilla", "booking machine");
             ht.Add("obezyana", "bookva");
             ht.Delete("some");
+            #endregion
+
+            CustomQueue<string> queue = new CustomQueue<string>();
+            queue.Enqueue("First");
+            queue.Enqueue("Second");
         }
     }
 }
