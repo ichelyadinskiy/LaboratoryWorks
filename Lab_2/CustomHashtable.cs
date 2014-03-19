@@ -32,7 +32,7 @@ namespace Lab_2
             if (current == null)
                 throw new InstanceNotFoundException("Value was not found!");
 
-            while (current.Next != null)
+            while (current != null)
             {
                 if (current.Key == key)
                     return current.Value;
