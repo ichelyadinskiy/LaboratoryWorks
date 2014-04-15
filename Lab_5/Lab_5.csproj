@@ -4,16 +4,15 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{DF102C1F-8B5B-4349-880A-A2B1AB2E202D}</ProjectGuid>
-    <OutputType>Exe</OutputType>
+    <ProjectGuid>{81745510-45A2-4E86-A63E-190DF6E13E24}</ProjectGuid>
+    <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Presentation</RootNamespace>
-    <AssemblyName>Presentation</AssemblyName>
+    <RootNamespace>Lab_5</RootNamespace>
+    <AssemblyName>Lab_5</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
-    <PlatformTarget>AnyCPU</PlatformTarget>
     <DebugSymbols>true</DebugSymbols>
     <DebugType>full</DebugType>
     <Optimize>false</Optimize>
@@ -23,7 +22,6 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
-    <PlatformTarget>AnyCPU</PlatformTarget>
     <DebugType>pdbonly</DebugType>
     <Optimize>true</Optimize>
     <OutputPath>bin\Release\</OutputPath>
@@ -41,29 +39,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Program.cs" />
+    <Compile Include="BinaryTree.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="App.config" />
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\Lab_2\Lab_2.csproj">
-      <Project>{99922482-c500-4f0a-84e0-5b6e9c47a2af}</Project>
-      <Name>Lab_2</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\Lab_3\Lab_3.csproj">
-      <Project>{49e9b5dd-5de8-4e94-a63f-f67af1ba176f}</Project>
-      <Name>Lab_3</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\Lab_4\Lab_4.csproj">
-      <Project>{4f7536d7-bcc2-4447-bcab-4b0e3de38c1a}</Project>
-      <Name>Lab_4</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\Lab_5\Lab_5.csproj">
-      <Project>{81745510-45a2-4e86-a63e-190df6e13e24}</Project>
-      <Name>Lab_5</Name>
-    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
